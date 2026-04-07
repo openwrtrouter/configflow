@@ -2338,7 +2338,6 @@ const showMosdnsSettingsDialog = async () => {
     mosdnsEnableIpv6.value = dnsResponse.data.enable_ipv6 !== undefined ? dnsResponse.data.enable_ipv6 : true
     mosdnsRemoteEnableIpv6.value = dnsResponse.data.remote_enable_ipv6 !== undefined ? dnsResponse.data.remote_enable_ipv6 : false
     
-      : false
     // 解析 DNS 文本为条目数组
     mosdnsLocalDnsEntries.value = parseDnsText(mosdnsLocalDns.value)
     mosdnsRemoteDnsEntries.value = parseDnsText(mosdnsRemoteDns.value)
